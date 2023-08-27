@@ -1,0 +1,111 @@
+
+@media (max-width:850px){
+    .gallery{
+        height: 800px;
+        width: 100%;
+        background-color: var(--clrFourthly);
+    }
+    .meme_templates{
+        columns: 5 150px;
+        column-gap: 16px;
+        position: relative;
+        height: 750px;
+        background-color: var(--clrPrimary-1);
+    }
+    .edited_memes{
+        columns: 5 150px;
+        position: relative;
+        width: 100%;
+    
+        background-color: var(--clrPrimary-1);
+    }
+    
+    .edited_memes .tester{
+        width: 150px;
+        height: 150px;
+        background-color: var(--clrFourthly);
+    }
+
+    .meme_software{
+        display: flex;
+        flex-direction: row;
+        height: 800px;
+        width:100%;
+        background-color: var(--clrFifthly);
+    }
+    .canvas{
+        width: 300px;
+        height: 300px;
+        margin-block-start: 100px;
+        margin-inline-start: 50px;
+        margin-inline-end: 50px;
+        background-color: var(--clrSecondry);
+    }
+    .meme_settings{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        height: 300px; 
+        margin-block-start: 100px;
+        margin-inline-start: 50px;
+        margin-inline-end: 50px;
+        background-color: var(--clrPrimary);
+    }
+}
+
+@media (max-width:400px){
+
+    .gallery{
+        height: 1670px;
+        width: 100%;
+        background-color: var(--clrFourthly);
+    }
+    .gallery_navbar{
+        display: flex;
+        flex-direction: row;
+        height:120px;
+        width:360px;
+    }
+    .language{
+        margin-inline-start: 20px;
+    }
+    .gallery_sorters{
+        margin: 0px;
+    }
+
+    .meme_templates{
+        columns: 2 150px;
+        column-gap: 55px;
+        position: relative;
+        height: 1550px;
+        background-color: var(--clrPrimary-1);
+    }
+
+    .meme_software{
+        display: flex;
+        flex-direction: column;
+        height: 690px;
+        width: 360px;
+        background-color: var(--clrFifthly);
+    }
+    .canvas{
+        width: 300px;
+        height: 300px;
+        margin-block-start: 30px;
+        margin-inline-start: 30px;    
+        margin-inline-end: 30px;
+        background-color: var(--clrSecondry);
+    }
+    .meme_settings{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+        margin-block-start: 30px;
+        margin-inline-start: 30px;    
+        margin-inline-end: 30px;
+        background-color: var(--clrPrimary);
+    }
+}

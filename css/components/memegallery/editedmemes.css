@@ -1,0 +1,16 @@
+@media (min-width:800px){
+    .edited_memes{
+        columns: 6 150px;
+        column-gap: 10px;
+        position: relative;
+        width: 960px;
+    
+        background-color: var(--clrPrimary-1);
+    }
+    
+    .edited_memes .tester{
+        width: 150px;
+        height: 150px;
+        background-color: var(--clrFourthly);
+    }
+}

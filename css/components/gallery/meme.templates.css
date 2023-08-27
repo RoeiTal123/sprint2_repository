@@ -1,0 +1,27 @@
+@media (max-width:1600px){
+    .gallery{
+        height: 600px;
+        width:1000px;
+        background-color: var(--clrFourthly);
+    }
+    
+    .meme_templates{
+        columns: 6 150px;
+        column-gap: 10px;
+        position: relative;
+        height: 520px;
+        background-color: var(--clrPrimary-1);
+    }
+    
+    .template{
+        width: 150px;
+        height: 150px;
+        border: 0px;
+        margin-bottom: 18px;
+    }
+    
+    .template:hover{
+        opacity: 0.6;
+    }
+    
+}

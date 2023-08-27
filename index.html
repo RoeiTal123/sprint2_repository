@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9d01dfbf67.js" crossorigin="anonymous"></script>
+    <title>Eleventh Version</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="onInit()">
+    <header>
+        <nav class="navbar flip">
+            <p class="icon">🍞</p>
+            <div class="nav_buttons">
+               <button data-trans="gallerybtn" class="gallery_btn selected flip" onclick="onToGallery()">GALLERY</button>
+               <!-- <button data-trans="savedmemesbtn" class="saved_memes_btn flip" onclick="onToSavedMemes()">SAVED MEMES</button> -->
+               <button data-trans="memeeditorbtn" class="meme_editor_btn flip" onclick="onToMemeEditor()">MEME EDITOR</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="gallery">
+        <nav class="gallery_navbar flip">
+            <div>
+            <!-- <input data-trans="search" type="text" placeholder="search" class="search_template flip"> -->
+            <select class="language" onchange="onSetLang(this.value)">
+                <option value="en">english</option>
+                <option value="he">hebrew</option>
+            </select>
+            </div>
+            <div class="gallery_sorters">
+                <button data-trans="funny" class="gallery_sort funny" onclick="onSort(this)">funny</button>
+                <button data-trans="animal" class="gallery_sort animal" onclick="onSort(this)">animal</button>
+                <button data-trans="bad" class="gallery_sort bad" onclick="onSort(this)">bad</button>
+                <button data-trans="awkward" class="gallery_sort awkward" onclick="onSort(this)">awkward</button>
+                <button data-trans="happy" class="gallery_sort happy" onclick="onSort(this)">happy</button>
+                <button data-trans="sad" class="gallery_sort sad" onclick="onSort(this)">sad</button>
+            </div>
+        </nav>
+
+        <section class="meme_templates">
+            <img class="template" src="imgs/1.jpg" onclick="onChosenTemplate(this)"></img>
+            <img class="template" src="imgs/2.jpg" onclick="onChosenTemplate(this)"></img>
+            <img class="template" src="imgs/3.jpg" onclick="onChosenTemplate(this)"></img>
+            <img class="template" src="imgs/4.jpg" onclick="onChosenTemplate(this)"></img>
+            <img class="template" src="imgs/5.jpg" onclick="onChosenTemplate(this)"></img>
+            <img class="template" src="imgs/6.jpg" onclick="onChosenTemplate(this)"></img>
+            <img class="template" src="imgs/7.jpg" onclick="onChosenTemplate(this)"></img>
+            <img class="template" src="imgs/8.jpg" onclick="onChosenTemplate(this)"></img>
+            <img class="template" src="imgs/9.jpg" onclick="onChosenTemplate(this)"></img>
+            <img class="template" src="imgs/10.jpg" onclick="onChosenTemplate(this)"></img>
+            <img class="template" src="imgs/11.jpg" onclick="onChosenTemplate(this)"></img>
+            <img class="template" src="imgs/12.jpg" onclick="onChosenTemplate(this)"></img>
+            <img class="template" src="imgs/13.jpg" onclick="onChosenTemplate(this)"></img>
+            <img class="template" src="imgs/14.jpg" onclick="onChosenTemplate(this)"></img>
+            <img class="template" src="imgs/15.jpg" onclick="onChosenTemplate(this)"></img>
+            <img class="template" src="imgs/16.jpg" onclick="onChosenTemplate(this)"></img>
+            <img class="template" src="imgs/17.jpg" onclick="onChosenTemplate(this)"></img>
+            <img class="template" src="imgs/18.jpg" onclick="onChosenTemplate(this)"></img>
+        </section>
+    </section>
+
+    <section class="edited_memes"></section>
+
+    <section class="meme_editor">
+        <div class="meme_software">
+        <canvas class="canvas" id="canvas" height="300px" width="300px"></canvas>
+
+        <section class="meme_settings">
+            <input type="text" placeholder="Add Text Here" class="text_input" onkeyup="renderLines(this)">
+            <div class="edit_text1">
+                <button class="text_height" onclick="onSwitchLine()"><i class="fa-solid fa-arrows-up-down"></i></button>
+                <button class="add_text" onclick="onAddLine()"><i class="fa-solid fa-plus"></i></button>
+                <button class="delete_text" onclick="onDeleteText()"><i class="fa-solid fa-trash"></i></button>
+            </div>
+            <div class="edit_text2">
+                <div class="row1">
+                    <button class="edit text_size_up" onclick="onTextSizeUp()"><i class="fa-solid fa-font"></i> +</button>
+                    <button class="edit text_size_down" onclick="onTextSizeDown()"><i class="fa-solid fa-font"></i> -</button>
+                    <button class="edit text_to_left" onclick="onChangeAlign(this)"><i class="fa-solid fa-align-left"></i></button>
+                    <button class="edit text_to_center" onclick="onChangeAlign(this)"><i class="fa-solid fa-align-center"></i></button>
+                    <button class="edit text_to_right" onclick="onChangeAlign(this)"><i class="fa-solid fa-align-right"></i></button>
+                </div>
+                <div class="row2">
+                    <select class="text_font"">
+                       <option value="impact">IMPACT</option>
+                       <option value="montserrat">MONTSERRAT</option>
+                    </select>
+                    <input type="color" class="edit text_color" onchange="onChangeTextColor(this)">
+                    <!-- <button class="edit text_color"><i class="fa-solid fa-brush"></i></button> -->
+                    <input type="color" class="edit text_stroke_color" onchange="onChangeStrokeColor(this)">
+                    <!-- <button class="edit text_stroke_color"><i class="fa-solid fa-fill-drip"></i></button> -->
+                </div>
+            </div>
+            <section class="outsource_meme">
+                <!-- <button class="save_meme" onclick="onSaveMeme()"><i class="fa-solid fa-download"></i>  SAVE</button> -->
+                <button class="share_meme" onclick="onUploadMeme()"><i class="fa-solid fa-share"></i>  SHARE</button>
+                <a href="#" class="download_meme" onclick="onDownloadMeme(this)" download="my-img.jpg"><i class="fa-solid fa-floppy-disk"></i>  DOWNLOAD</a>
+            </section>
+        </section>
+        </div>
+    </section>
+
+    <script src="js/service/i18n-service.js"></script>
+    <script src="js/service/util.js"></script>
+    <script src="js/service/storage.service.js"></script>
+    <script src="js/gallery/gallery.controller.js"></script>
+    <script src="js/memeeditor/meme.editor.controller.js"></script>
+    <script src="js/memeeditor/meme.editor.service.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

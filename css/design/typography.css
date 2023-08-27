@@ -1,0 +1,12 @@
+@font-face {
+    font-family: impact;
+    src: url("../../lib/impact.ttf");
+}
+@font-face {
+    font-family: montserrat;
+    src: url("../../lib/Montserrat-Light.ttf");
+}
+
+.rtl{
+    direction: rtl;
+}

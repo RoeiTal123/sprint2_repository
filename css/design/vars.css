@@ -1,0 +1,46 @@
+
+:root{
+
+    /* colors */
+
+    --clrPrimary: black;
+    --clrPrimary-1:rgb(199, 204, 209);
+    --clrPrimary-2:rgb(231, 229, 229);
+    --clrPrimary-3:white;
+
+    --clrSecondry:rgb(243, 255, 240);
+
+    --clrThirdly:rgb(252, 191, 38);
+
+    --clrFourthly:aliceblue;
+
+    --clrFifthly:aquamarine;
+
+    /* editor color */
+
+    --clrbg:rgb(0, 164, 164);
+
+    --clrEditor11:rgb(0, 139, 177);
+    --clrEditor10:rgb(1, 166, 212);
+    --clrEditor1-1:rgb(49, 203, 245);
+    
+    --clrEditor21:rgb(0, 179, 0);
+    --clrEditor20:rgb(0, 225, 0);
+    --clrEditor2-1:rgb(59, 255, 59);
+
+    --clrEditor31:rgb(205, 0, 0);
+    --clrEditor30:red;
+    --clrEditor3-1:rgb(255, 165, 165);
+
+    --clrEditor41:rgb(32, 98, 163);
+    --clrEditor40:rgb(43, 135, 227);
+    --clrEditor4-1:rgb(81, 164, 248);
+
+    --clrEditor51:rgb(84, 155, 118);
+    --clrEditor50:rgb(105, 192, 147);
+    --clrEditor5-1:rgb(114, 210, 161);
+    
+    --clrEditor61:rgb(129, 7, 153);
+    --clrEditor60:rgb(159, 8, 189);
+    --clrEditor6-1:rgb(185, 9, 220);
+}

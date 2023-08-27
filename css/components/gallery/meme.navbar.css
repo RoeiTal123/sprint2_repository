@@ -1,0 +1,37 @@
+.gallery_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width:100%;
+    background-color: var(--clrThirdly);
+}
+
+::placeholder{
+    text-align:center
+}
+
+/* .search_template{
+    position: relative;
+    margin-inline-start: 20px;
+} */
+
+.language{
+    margin-inline-start: 20px;
+}
+
+.gallery_navbar button{
+    border: 0;
+    background-color: var(--clrThirdly);
+}
+
+.gallery_sorters{
+    position: relative;
+    /* right: 12%; */
+    margin-inline-start: 100px;
+    margin-inline-end: 100px;
+}
+
+.gallery_sort{
+    color: var(--clrPrimary-3);
+}

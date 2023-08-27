@@ -1,0 +1,10 @@
+@media (min-width:850px){
+    .canvas{
+        height: 300px;
+        width: 300px;
+        margin-inline-start: 180px;
+        margin-inline-end: 40px;
+        margin-block-start: 100px;
+        background-color: var(--clrSecondry);
+    }
+}
